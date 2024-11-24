@@ -11,7 +11,7 @@
 ## Используемые технологии
 - **Python**
 - **Flask**
-- **Torch**
+- **PyTorch**
 - **Transformers (Hugging Face)**
 - **HTML & CSS**
 
