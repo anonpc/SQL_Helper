@@ -13,7 +13,6 @@ class T5_SQL_Model:
         self.tokenizer = T5Tokenizer.from_pretrained(tokenizer_path)
         self.generate_model = T5ForConditionalGeneration.from_pretrained(model_path)
 
-        # Убедимся, что используется устройство GPU, если оно доступно
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.generate_model.to(self.device)
 
