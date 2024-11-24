@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Результаты анализа</h2>
+<p><strong>Исходный SQL-запрос:</strong></p>
+<pre>{{ query }}</pre>
+<p><strong>Рекомендации:</strong></p>
+<pre>{{ recommendations }}</pre>
+<a href="/">Вернуться на главную</a>
+{% endblock %}

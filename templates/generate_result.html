@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Сгенерированный SQL-запрос</h2>
+<p><strong>Описание:</strong></p>
+<pre>{{ description }}</pre>
+<p><strong>Контекст (DDL):</strong></p>
+<pre>{{ context }}</pre>
+<p><strong>SQL-запрос:</strong></p>
+<pre>{{ generated_query }}</pre>
+<a href="/">Вернуться на главную</a>
+{% endblock %}

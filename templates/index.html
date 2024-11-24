@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Добро пожаловать в SQL Helper</h2>
+    <p>Введите описание и контекст таблиц для генерации SQL-запроса.</p>
+    <form action="/generate" method="post">
+        <label for="description">Описание:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+        <label for="context">Контекст (DDL):</label><br>
+        <textarea id="context" name="context" rows="6" cols="50" required></textarea><br><br>
+        <button type="submit">Сгенерировать SQL-запрос</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Исправленный SQL-запрос</h2>
+<p><strong>Исходный SQL-запрос:</strong></p>
+<pre>{{ query }}</pre>
+<p><strong>Исправленный SQL-запрос:</strong></p>
+<pre>{{ fixed_query }}</pre>
+<a href="/">Вернуться на главную</a>
+{% endblock %}
