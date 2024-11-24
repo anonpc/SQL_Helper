@@ -2,7 +2,7 @@ import torch
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 class T5_SQL_Model:
-    def __init__(self, model_path="/Users/dmitrijvarlygin/Intelligent_assistant_for_administering_SQL_queries/models/t5_sql_fine_tuned", tokenizer_path="/Users/dmitrijvarlygin/Intelligent_assistant_for_administering_SQL_queries/models/t5_sql_fine_tuned"):
+    def __init__(self, model_path="anonpc/SQL_HelperT5", tokenizer_path="anonpc/SQL_HelperT5"):
         """
         Инициализация модели и токенизатора.
         
@@ -73,7 +73,7 @@ class T5_SQL_Model:
 
 if __name__ == "__main__":
     # Пример использования модели
-    sql_model = T5_SQL_Model(model_path="models/t5_sql_fine_tuned", tokenizer_path="models/t5_sql_fine_tuned")
+    sql_model = T5_SQL_Model(model_path="anonpc/SQL_HelperT5", tokenizer_path="anonpc/SQL_HelperT5")
 
     question = "How many heads of the departments are older than 56?"
     context = "CREATE TABLE head (age INTEGER)"
