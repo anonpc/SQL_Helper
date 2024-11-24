@@ -8,33 +8,35 @@
 - Удобный пользовательский интерфейс для ввода данных.
 - Поддержка Flask для запуска веб-приложения.
 
-## Структура проекта
-
 ## Установка и запуск
 
 ### 1. Клонирование репозитория
-git clone https://github.com/your_username/SQL-Helper.git
-cd SQL-Helper
+1. git clone [https://github.com/your_username/SQL-Helper.git](https://github.com/anonpc/SQL_Helper.git)
+2. cd SQL-Helper
 
 ### 2. Установка зависимостей
 Создайте и активируйте виртуальное окружение, затем установите зависимости:
-python -m venv venv
-source venv/bin/activate  # Для Linux/macOS
-venv\Scripts\activate     # Для Windows
-pip install -r requirements.txt
+
+1. python -m venv venv
+2. source venv/bin/activate  # Для Linux/macOS
+3. venv\Scripts\activate     # Для Windows
+4. pip install -r requirements.txt
 
 ### 3. Запуск приложения
 Запустите Flask-приложение:
-python app.py
+1. python app.py
+2. Откройте браузер и перейдите по адресу http://127.0.0.1:5000/
 
-Откройте браузер и перейдите по адресу http://127.0.0.1:5000/
+---
 
 ### Зависимости
 Приложение использует следующие библиотеки:
 
-Flask
-torch
-transformers
+1. Flask
+2. torch
+3. transformers
+
+---
 
 ### Как использовать
 1. Перейдите на главную страницу приложения.
