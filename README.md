@@ -42,7 +42,7 @@
 ## Установка и запуск
 
 ### 1. Клонирование репозитория
-1. git clone [https://github.com/your_username/SQL-Helper.git](https://github.com/anonpc/SQL_Helper.git)
+1. git clone [https://github.com/anonpc/SQL-Helper.git](https://github.com/anonpc/SQL_Helper.git)
 2. cd SQL-Helper
 
 ### 2. Установка зависимостей
