@@ -7,24 +7,11 @@ logging.basicConfig(level=logging.DEBUG)
 app = Flask(__name__)
 
 # Инициализация модели
-model = T5_SQL_Model(model_path='models/t5_sql_fine_tuned', tokenizer_path='models/t5_sql_fine_tuned')
+model = T5_SQL_Model(model_path='anonpc/SQL_HelperT5', tokenizer_path='anonpc/SQL_HelperT5')
 
 @app.route('/')
 def home():
     return render_template('index.html')
-
-# @app.route('/generate', methods=['POST'])
-# def generate():
-#     """
-#     Эндпоинт для генерации SQL-запроса на основе описания.
-#     """
-#     description = request.form['description']
-#     context = request.form['context']
-#     try:
-#         generated_query = model.generate(description, context)
-#     except Exception as e:
-#         generated_query = f"Ошибка при генерации: {e}"
-#     return render_template('generate_result.html', description=description, generated_query=generated_query)
 
 @app.route('/generate', methods=['POST'])
 def generate():
